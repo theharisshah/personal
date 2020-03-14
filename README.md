@@ -5,4 +5,6 @@
 </p>
 
 <h3 align="center">About</h3>
+<p align="center">
 My personal portfolio website and blog. Where you can see some of my thoughts and some of works.
+</p>
