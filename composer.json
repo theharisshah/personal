@@ -12,7 +12,10 @@
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",
         "guzzlehttp/guzzle": "^6.3",
+        "harisshah/scaffolding": "@dev",
         "laravel/framework": "^7.0",
+        "laravel/helpers": "^1.2",
+        "laravel/socialite": "^4.3",
         "laravel/tinker": "^2.0"
     },
     "require-dev": {
@@ -27,6 +30,15 @@
         "preferred-install": "dist",
         "sort-packages": true
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/scaffolding",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "extra": {
         "laravel": {
             "dont-discover": []
@@ -36,6 +48,7 @@
         "psr-4": {
             "Haris\\": "app/"
         },
+        "files": ["app/Http/helpers.php"],
         "classmap": [
             "database/seeds",
             "database/factories"

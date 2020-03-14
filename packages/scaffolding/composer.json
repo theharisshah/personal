@@ -1,0 +1,29 @@
+{
+    "name": "harisshah/scaffolding",
+    "require": {
+        "illuminate/contracts": "7.*.*",
+        "illuminate/console": "7.*.*"
+    },
+    "license": "mit",
+    "authors": [
+        {
+            "name": "theharisshah",
+            "email": "shahharis383@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    
+    "autoload": {
+        "psr-4": {
+            "DeepSpace9\\Scaffolding\\": "src/"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DeepSpace9\\Scaffolding\\ScaffoldingServiceProvider"
+            ]
+        }
+    }
+}
