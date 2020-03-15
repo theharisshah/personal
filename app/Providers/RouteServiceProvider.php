@@ -44,9 +44,8 @@ class RouteServiceProvider extends ServiceProvider
     {
         $this->mapApiRoutes();
 
+        $this->mapDiaryRoutes();
         $this->mapWebRoutes();
-
-        //
     }
 
     /**
@@ -76,5 +75,14 @@ class RouteServiceProvider extends ServiceProvider
             ->middleware('api')
             ->namespace($this->namespace)
             ->group(base_path('routes/api.php'));
+    }
+
+    protected function mapDiaryRoutes()
+    {
+        Route::middleware('web')
+            ->domain(env('DOMAIN_BLOG'))
+            ->as("diary::")
+            ->namespace($this->namespace.'\Diary')
+            ->group(base_path('routes/diary.php'));
     }
 }
